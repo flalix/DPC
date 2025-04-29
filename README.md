@@ -51,6 +51,7 @@ The DPC was implemented using two studies (COVID-19 proteomics, and Medulloblast
 
 The DPC was necessary to support the soon-to-be-published Best Cutoff Algorithm (BCA).
 
-After DPC and BCA are published, a Python library will be send to the official Python sites.
+After DPC and BCA were published, a Python library will be send to the official Python sites.
 
-We intend to make a website for the Molecular Target Discovery pipeline (MTDp) available after publishing the 4 sub-pipelines.
+We intend to make a website for the Molecular Target Discovery project (MTDp) available after publishing the 4 sub-pipelines.
+
