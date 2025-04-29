@@ -1,8 +1,6 @@
-# Digital Pathway Curation (DPC)
-
+# The Digital Pathway Curation (DPC) pipeline
 
 ## Molecular Target Discovery project (MTDp)
-
 
 The Molecular Target Discovery project (MTDp) is composed by a set of 4 pipelines.
 
@@ -11,13 +9,9 @@ The Molecular Target Discovery project (MTDp) is composed by a set of 4 pipeline
   3. pseudo-Pathway Modulation (pPMod)
   4. In-silico gene validation
 
-
 Here, we are presenting the **Digital Pathway Curation** (DPC), a study case.
 
-
-
 ## Questions
-
 
 The Digital Pathway Curation (DPC) pipeline was designed and tested to answer the following questions:
 
