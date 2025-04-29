@@ -2875,7 +2875,7 @@ class Gemini(object):
 			dfconf3 = pdreadcsv(fname3, self.root_curation, verbose=verbose)
 			return dfconf1, dfconf2, dfconf3
 
-		_, dfcons = self.open_gemini_summary_consensus_statitics(chosen_model_list=chosen_model_list, verbose=verbose)
+		_, dfcons = self.open_gemini_summary_consensus_statitics_idfp(chosen_model_list=chosen_model_list, verbose=verbose)
 
 		if dfcons is None or dfcons.empty:
 			print("Could not read open_gemini_summary_consensus_statitics()")

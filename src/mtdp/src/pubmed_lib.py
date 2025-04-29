@@ -924,7 +924,7 @@ class Pubmed:
 		return term_list, not_list + ['child', 'neonat', 'newborn']
 
 
-	def open_dfp_default(self, case:str, i_dfp:int,  verbose:bool=False) -> pd.DataFrame:
+	def get_gemini_pathways_case_dfp_iq0(self, case:str, i_dfp:int,  verbose:bool=False) -> pd.DataFrame:
 
 		ret, _, _, _ = self.bpx.open_case(case, verbose=False)
 
@@ -943,7 +943,7 @@ class Pubmed:
 		if self.is_seldata:
 			dfp = self.gem.open_yes_no_sampling(case=case, N=N, query_type=query_type, verbose=True)
 		else:
-			dfp = self.open_dfp_default(case, i_dfp)
+			dfp = self.get_gemini_pathways_case_dfp_iq0(case, i_dfp)
 
 		'''
 		self.df_pmid, self.df_summ_pmid, self.df_summ_pathway = None, None, None
@@ -998,8 +998,8 @@ class Pubmed:
 			dfp = self.gem.open_yes_no_sampling(case=case, N=N, query_type=query_type, verbose=verbose)
 			stri = "is_seldata True -> open_yes_no_sampling"
 		else:
-			dfp = self.open_dfp_default(case, i_dfp, verbose=verbose)
-			stri = "is_seldata False -> open_dfp_default"
+			dfp = self.get_gemini_pathways_case_dfp_iq0(case, i_dfp, verbose=verbose)
+			stri = "is_seldata False -> get_gemini_pathways_case_dfp_iq0"
 
 
 		if dfp is None or dfp.empty:
@@ -1511,7 +1511,6 @@ class Pubmed:
 		if not isinstance(self.connective_param, str) or self.connective_param == '':
 			self.connective_param = 'AND'
 			print(">>> Defining connective_param as 'AND'.")
-
 
 		connective = deepcopy(connective)
 		terms1	   = deepcopy(terms1)
