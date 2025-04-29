@@ -14,6 +14,7 @@ Here, we are presenting the **Digital Pathway Curation** (DPC), a study case.
 ## Questions
 
 The Digital Pathway Curation (DPC) pipeline was designed and tested to answer the following questions:  
+
 	1. How can we demonstrate that a molecular biological pathway is related to a disease?  
 	2. How can we demonstrate whether a set of molecular biological pathways, calculated beyond the default cutoffs using GSEA, is related to a disease case?  
 	3. How can someone query Gemini in a natural language and retrieve reproducible answers without hallucinations?  
@@ -22,6 +23,7 @@ The Digital Pathway Curation (DPC) pipeline was designed and tested to answer th
 
   
 Regarding the relationship between a set of molecular biological pathways and a disease, we also considered the following questions:  
+
 	6. How can we calculate the accuracy of the answers provided by Gemini, PubMed, and humans?  
 	7. How do we uncover FP and FN in a given enriched table?  
 
